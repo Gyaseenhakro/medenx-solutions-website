@@ -5,16 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MeDenX Solutions | Healthcare Operations, Revenue Cycle &amp; Technology Partner</title>
 <meta name="description" content="MeDenX Solutions helps healthcare organizations streamline administrative operations, strengthen revenue cycle performance, support clinical workflows and build reliable healthcare technology infrastructure.">
+<link rel="canonical" href="https://gyaseenhakro.github.io/medenx-solutions-website/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MeDenX Solutions | Healthcare Operations, Revenue Cycle &amp; Technology Partner">
+<meta property="og:description" content="MeDenX Solutions helps healthcare organizations streamline administrative operations, strengthen revenue cycle performance, support clinical workflows and build reliable healthcare technology infrastructure.">
+<meta property="og:url" content="https://gyaseenhakro.github.io/medenx-solutions-website/">
+<meta property="og:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta property="og:site_name" content="MeDenX Solutions">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MeDenX Solutions | Healthcare Operations, Revenue Cycle &amp; Technology Partner">
+<meta name="twitter:description" content="MeDenX Solutions helps healthcare organizations streamline administrative operations, strengthen revenue cycle performance, support clinical workflows and build reliable healthcare technology infrastructure.">
+<meta name="twitter:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- BUILD:HEADER -->
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="index.html" class="brand">
       <img src="assets/img/medenx-icon-sm.png" alt="MeDenX Solutions icon">
-      <span>
+      <span class="brand-text">
         <span class="brand-word"><span class="c-blue">Me</span><span class="c-green">D</span><span class="c-ink">en</span><span class="c-blue">X</span></span>
         <span class="brand-sub">SOLUTIONS</span>
       </span>
@@ -32,6 +44,7 @@
     </div>
   </div>
 </header>
+<!-- /BUILD:HEADER -->
 
 <!-- HERO -->
 <section class="hero">
@@ -101,25 +114,105 @@
 </section>
 
 <!-- VALUE PROPOSITION -->
-<section class="section-soft">
+<section class="section-navy p3d-section">
   <div class="container">
     <div class="section-head center">
       <div class="eyebrow" style="justify-content:center;display:flex;">Our Approach</div>
       <h2>More Than Support. A Strategic Healthcare Operations Partner.</h2>
       <p class="lead">MeDenX combines people, process and technology to help healthcare organizations reduce administrative workload, improve workflow consistency, strengthen patient engagement, accelerate revenue-cycle performance and scale operations efficiently.</p>
     </div>
-    <div class="pillars">
-      <div class="pillar pillar-people">
-        <h3>People</h3>
-        <p>Experienced operational and healthcare support teams who understand the realities of day-to-day practice operations.</p>
-      </div>
-      <div class="pillar pillar-process">
-        <h3>Process</h3>
-        <p>Structured, measurable and repeatable workflows designed to reduce bottlenecks and improve consistency.</p>
-      </div>
-      <div class="pillar pillar-tech">
-        <h3>Technology</h3>
-        <p>Modern systems, automation, data and software solutions that support every operational workflow.</p>
+
+    <div class="p3d-stage-wrap" id="p3dStageWrap">
+      <canvas class="p3d-canvas" id="p3dCanvas" aria-hidden="true"></canvas>
+      <div class="p3d-spotlight" id="p3dSpotlight" aria-hidden="true"></div>
+      <div class="p3d-floor" aria-hidden="true"></div>
+
+      <div class="p3d-stage" id="p3dStage">
+        <svg class="p3d-links" viewBox="0 0 1000 290" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="p3dLinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#29A9FF"/>
+              <stop offset="100%" stop-color="#4CD888"/>
+            </linearGradient>
+          </defs>
+          <path d="M180,150 C 280,108 380,108 495,150" class="glow" />
+          <path id="linkPath1" d="M180,150 C 280,108 380,108 495,150" />
+          <path d="M180,150 C 280,108 380,108 495,150" class="pulse" />
+          <path d="M505,150 C 620,108 720,108 820,150" class="glow" />
+          <path id="linkPath2" d="M505,150 C 620,108 720,108 820,150" />
+          <path d="M505,150 C 620,108 720,108 820,150" class="pulse" />
+
+          <circle class="p3d-particle-dot" r="4" fill="#ffffff">
+            <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#linkPath1"/>
+            </animateMotion>
+          </circle>
+          <circle class="p3d-particle-dot" r="4" fill="#ffffff">
+            <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#linkPath2"/>
+            </animateMotion>
+          </circle>
+        </svg>
+
+        <span class="p3d-plus" style="left:33.3%;">+</span>
+        <span class="p3d-plus" style="left:66.6%;">+</span>
+
+        <div class="p3d-card" data-pillar="people" style="--tilt:-9deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2"/><circle cx="17" cy="7.5" r="2.4"/><path d="M15.5 13.4c2.6.4 4.5 2.3 4.9 4.9"/></svg></div>
+                  <div class="face back"></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>People</h3>
+              <p>Experienced operational and healthcare support teams who understand the realities of day-to-day practice operations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p3d-card" data-pillar="process" style="--tilt:0deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.3"/><circle cx="19" cy="6" r="2.3"/><circle cx="12" cy="18" r="2.3"/><path d="M7.1 7.1 10 16M16.9 7.1 14 16M7.3 6h9.4"/></svg></div>
+                  <div class="face back"></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Process</h3>
+              <p>Structured, measurable and repeatable workflows designed to reduce bottlenecks and improve consistency.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p3d-card" data-pillar="technology" style="--tilt:9deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m18 0V5a2 2 0 0 0-2-2h-4m0 18h4a2 2 0 0 0 2-2v-4M3 15v4a2 2 0 0 0 2 2h4"/><rect x="8.5" y="8.5" width="7" height="7" rx="1.4"/></svg></div>
+                  <div class="face back"></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Technology</h3>
+              <p>Modern systems, automation, data and software solutions that support every operational workflow.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -177,6 +270,7 @@
   </div>
 </section>
 
+<!-- BUILD:FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
@@ -202,8 +296,8 @@
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="services.html#patient-access">Patient Access</a></li>
-          <li><a href="services.html#revenue-cycle">Revenue Cycle</a></li>
+          <li><a href="services.html#patient-access">Front Office Services</a></li>
+          <li><a href="services.html#revenue-cycle">Back Office Services</a></li>
           <li><a href="services.html#clinical-support">Clinical Support</a></li>
           <li><a href="services.html#technology">Technology</a></li>
         </ul>
@@ -220,7 +314,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li>hello@medenxsolutions.com</li>
+          <li>info@medenxsolutions.com</li>
           <li>+1 (000) 000-0000</li>
           <li>United States</li>
         </ul>
@@ -237,7 +331,9 @@
     </div>
   </div>
 </footer>
+<!-- /BUILD:FOOTER -->
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/pillars-3d.js"></script>
 </body>
 </html>

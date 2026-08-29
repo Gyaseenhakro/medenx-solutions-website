@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gyaseenhakro.github.io/medenx-solutions-website/sitemap.xml
