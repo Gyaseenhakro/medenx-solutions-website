@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/</loc><priority>1.0</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/about.html</loc><priority>0.8</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/services.html</loc><priority>0.9</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/insights.html</loc><priority>0.7</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/insights/prior-authorization-bottlenecks.html</loc><priority>0.6</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/case-studies.html</loc><priority>0.7</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/contact.html</loc><priority>0.8</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/privacy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/terms.html</loc><priority>0.3</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/disclaimer.html</loc><priority>0.3</priority></url>
-  <url><loc>https://gyaseenhakro.github.io/medenx-solutions-website/accessibility.html</loc><priority>0.3</priority></url>
+  <url><loc>https://medenxsolutions.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://medenxsolutions.com/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://medenxsolutions.com/services.html</loc><priority>0.9</priority></url>
+  <url><loc>https://medenxsolutions.com/insights.html</loc><priority>0.7</priority></url>
+  <url><loc>https://medenxsolutions.com/insights/prior-authorization-bottlenecks.html</loc><priority>0.6</priority></url>
+  <url><loc>https://medenxsolutions.com/case-studies.html</loc><priority>0.7</priority></url>
+  <url><loc>https://medenxsolutions.com/contact.html</loc><priority>0.8</priority></url>
+  <url><loc>https://medenxsolutions.com/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://medenxsolutions.com/terms.html</loc><priority>0.3</priority></url>
+  <url><loc>https://medenxsolutions.com/disclaimer.html</loc><priority>0.3</priority></url>
+  <url><loc>https://medenxsolutions.com/accessibility.html</loc><priority>0.3</priority></url>
 </urlset>
