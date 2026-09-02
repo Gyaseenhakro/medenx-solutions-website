@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://medenxsolutions.com/sitemap.xml
+Sitemap: https://gyaseenhakro.github.io/medenx-solutions-website/sitemap.xml
