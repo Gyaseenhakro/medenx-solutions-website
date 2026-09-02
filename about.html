@@ -65,6 +65,26 @@
     </div>
     <div class="hero-visual" style="min-height:320px;">
       <img src="assets/img/medenx-icon-lg.png" alt="MeDenX icon">
+
+      <div class="float-icon icon-medical" title="Medical &amp; Dental">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21c-3-3.2-5-6-5-9a5 5 0 0 1 5-5 5 5 0 0 1 5 5c0 3-2 5.8-5 9Z"/>
+          <path d="M12 4V2M9 3h6"/>
+        </svg>
+      </div>
+
+      <div class="float-icon icon-it" title="IT &amp; Technology">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 3H5a2 2 0 0 0-2 2v4m18 0V5a2 2 0 0 0-2-2h-4m0 18h4a2 2 0 0 0 2-2v-4M3 15v4a2 2 0 0 0 2 2h4"/>
+          <rect x="8.5" y="8.5" width="7" height="7" rx="1.4"/>
+        </svg>
+      </div>
+
+      <div class="float-icon icon-business" title="Business Operations">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3v18h18M7 15l4-4 3 3 5-6"/>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
@@ -84,19 +104,152 @@
   </div>
 </section>
 
-<section>
+<section class="section-navy p3d-section">
   <div class="container">
     <div class="section-head center">
       <div class="eyebrow" style="justify-content:center;display:flex;">Our Approach</div>
       <h2>Understand. Optimize. Execute. Measure. Improve.</h2>
       <p class="lead">A five-step approach that keeps every engagement structured, measurable and continuously improving.</p>
     </div>
-    <div class="process">
-      <div class="process-step"><span class="num">01</span><h3>Understand</h3><p>We learn your workflows, systems and organizational goals before recommending a solution.</p></div>
-      <div class="process-step"><span class="num">02</span><h3>Optimize</h3><p>We identify bottlenecks and design a workflow structured for your specific operation.</p></div>
-      <div class="process-step"><span class="num">03</span><h3>Execute</h3><p>Our teams and technology are deployed to carry out the agreed operational workflow.</p></div>
-      <div class="process-step"><span class="num">04</span><h3>Measure</h3><p>Performance is tracked against defined, measurable operational standards.</p></div>
-      <div class="process-step"><span class="num">05</span><h3>Improve</h3><p>Workflows are continuously refined as your organization's needs evolve.</p></div>
+
+    <div class="p3d-stage-wrap" id="p3dStageWrap">
+      <canvas class="p3d-canvas" id="p3dCanvas" aria-hidden="true"></canvas>
+      <div class="p3d-spotlight" id="p3dSpotlight" aria-hidden="true"></div>
+      <div class="p3d-floor" aria-hidden="true"></div>
+
+      <div class="p3d-stage p3d-stage--5" id="p3dStage">
+        <svg class="p3d-links" viewBox="0 0 1000 200" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="p3dLinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#29A9FF"/>
+              <stop offset="100%" stop-color="#4CD888"/>
+            </linearGradient>
+          </defs>
+
+          <path d="M100,100 C 160,68 240,68 300,100" class="glow" />
+          <path id="procLink1" d="M100,100 C 160,68 240,68 300,100" />
+          <path d="M100,100 C 160,68 240,68 300,100" class="pulse" style="animation-delay:0s;" />
+
+          <path d="M300,100 C 360,68 440,68 500,100" class="glow" />
+          <path id="procLink2" d="M300,100 C 360,68 440,68 500,100" />
+          <path d="M300,100 C 360,68 440,68 500,100" class="pulse" style="animation-delay:-1s;" />
+
+          <path d="M500,100 C 560,68 640,68 700,100" class="glow" />
+          <path id="procLink3" d="M500,100 C 560,68 640,68 700,100" />
+          <path d="M500,100 C 560,68 640,68 700,100" class="pulse" style="animation-delay:-2s;" />
+
+          <path d="M700,100 C 760,68 840,68 900,100" class="glow" />
+          <path id="procLink4" d="M700,100 C 760,68 840,68 900,100" />
+          <path d="M700,100 C 760,68 840,68 900,100" class="pulse" style="animation-delay:-3s;" />
+
+          <circle class="p3d-particle-dot" r="4" fill="#ffffff">
+            <animateMotion dur="3s" repeatCount="indefinite" rotate="auto"><mpath href="#procLink1"/></animateMotion>
+          </circle>
+          <circle class="p3d-particle-dot" r="4" fill="#ffffff">
+            <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" rotate="auto"><mpath href="#procLink3"/></animateMotion>
+          </circle>
+        </svg>
+
+        <span class="p3d-plus" style="left:20%;">+</span>
+        <span class="p3d-plus" style="left:40%;">+</span>
+        <span class="p3d-plus" style="left:60%;">+</span>
+        <span class="p3d-plus" style="left:80%;">+</span>
+
+        <div class="p3d-card" data-step="1" style="--tilt:-12deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><span class="num">01</span></div>
+                  <div class="face back"><span class="num">01</span></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Understand</h3>
+              <p>We learn your workflows, systems and organizational goals before recommending a solution.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p3d-card" data-step="2" style="--tilt:-6deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><span class="num">02</span></div>
+                  <div class="face back"><span class="num">02</span></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Optimize</h3>
+              <p>We identify bottlenecks and design a workflow structured for your specific operation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p3d-card" data-step="3" style="--tilt:0deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><span class="num">03</span></div>
+                  <div class="face back"><span class="num">03</span></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Execute</h3>
+              <p>Our teams and technology are deployed to carry out the agreed operational workflow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p3d-card" data-step="4" style="--tilt:6deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><span class="num">04</span></div>
+                  <div class="face back"><span class="num">04</span></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Measure</h3>
+              <p>Performance is tracked against defined, measurable operational standards.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p3d-card" data-step="5" style="--tilt:12deg;">
+          <div class="p3d-float">
+            <div class="p3d-card-inner">
+              <div class="p3d-cube-wrap">
+                <div class="p3d-cube">
+                  <div class="face front"><span class="num">05</span></div>
+                  <div class="face back"><span class="num">05</span></div>
+                  <div class="face right"></div>
+                  <div class="face left"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+              <h3>Improve</h3>
+              <p>Workflows are continuously refined as your organization's needs evolve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -192,5 +345,6 @@
 <!-- /BUILD:FOOTER -->
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/pillars-3d.js"></script>
 </body>
 </html>

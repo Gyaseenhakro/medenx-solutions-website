@@ -189,8 +189,8 @@ h3{ font-size:22px; }
 }
 .brand{
   display:flex;
-  align-items:center;
-  gap:14px;
+  align-items:end;
+  gap: 5px;
 }
 .brand img{ height:52px; width:auto; }
 .brand-text{ display:flex; flex-direction:column; align-items:center; }
@@ -203,10 +203,10 @@ h3{ font-size:22px; }
   font-family:var(--font-head);
   font-size:8.5px;
   font-weight:700;
-  letter-spacing:0.18em;
+  letter-spacing:0.7em;
   color:var(--blue-600);
-  margin-top:3px;
-  text-align:center;
+  margin-top:1px;
+  text-align:left;
 }
 
 .nav-links{
@@ -330,6 +330,56 @@ h3{ font-size:22px; }
 .hero-visual .pulse-line{
   position:absolute; inset:0;
   opacity:0.5;
+}
+
+/* Floating Medical/Dental, IT and Business icons — layered above the hero logo,
+   drifting freely across the whole .hero-visual box (which already has
+   overflow:hidden, so they stay contained). */
+.float-icon{
+  position:absolute; z-index:2;
+  width:58px; height:58px;
+  border-radius:16px;
+  display:flex; align-items:center; justify-content:center;
+  -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.35);
+  box-shadow:0 14px 26px -10px rgba(0,0,0,.4);
+}
+.float-icon svg{ width:26px; height:26px; stroke:#fff; }
+.icon-medical{ background:rgba(41,169,255,.28); animation:driftA 9s ease-in-out infinite; }
+.icon-it{ background:rgba(23,168,85,.28); animation:driftB 10.5s ease-in-out infinite; }
+.icon-business{ background:rgba(76,216,136,.28); animation:driftC 8.2s ease-in-out infinite; }
+
+@keyframes driftA{
+  0%   { left:8%;  top:12%; }
+  25%  { left:60%; top:8%;  }
+  55%  { left:48%; top:66%; }
+  80%  { left:14%; top:52%; }
+  100% { left:8%;  top:12%; }
+}
+@keyframes driftB{
+  0%   { left:72%; top:62%; }
+  30%  { left:16%; top:58%; }
+  60%  { left:30%; top:14%; }
+  85%  { left:70%; top:20%; }
+  100% { left:72%; top:62%; }
+}
+@keyframes driftC{
+  0%   { left:38%; top:74%; }
+  35%  { left:78%; top:34%; }
+  65%  { left:56%; top:10%; }
+  90%  { left:16%; top:30%; }
+  100% { left:38%; top:74%; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .float-icon{ animation:none !important; }
+  .icon-medical{ left:10%; top:14%; }
+  .icon-it{ left:68%; top:60%; }
+  .icon-business{ left:40%; top:76%; }
+}
+@media (max-width:560px){
+  .float-icon{ width:44px; height:44px; }
+  .float-icon svg{ width:20px; height:20px; }
 }
 
 @media (max-width:960px){
@@ -594,6 +644,38 @@ h3{ font-size:22px; }
   .p3d-cube{ animation:none !important; transform:rotateX(-10deg) rotateY(-24deg) !important; }
   .p3d-links, .p3d-canvas, .p3d-floor, .p3d-spotlight{ display:none; }
   .p3d-plus{ display:none; }
+}
+
+/* ---- 5-step variant (About page "Our Approach" process) ---- */
+.p3d-stage--5{ grid-template-columns:repeat(5,1fr); gap:18px; }
+.p3d-stage--5 .p3d-card-inner{ padding:28px 18px 26px; }
+.p3d-stage--5 .p3d-cube-wrap{ width:52px; height:52px; margin:0 auto 18px; }
+.p3d-stage--5 .p3d-cube .face .num{ font-size:19px; }
+.p3d-stage--5 .p3d-card-inner h3{ font-size:17px; margin-bottom:8px; }
+.p3d-stage--5 .p3d-card-inner p{ font-size:13.5px; }
+.p3d-cube .face .num{ font-family:var(--font-head); font-weight:800; color:#fff; }
+
+.p3d-card[data-step="1"] .p3d-card-inner{ --glow:rgba(0,130,224,.55); }
+.p3d-card[data-step="2"] .p3d-card-inner{ --glow:rgba(41,169,255,.5); }
+.p3d-card[data-step="3"] .p3d-card-inner{ --glow:rgba(31,182,146,.5); }
+.p3d-card[data-step="4"] .p3d-card-inner{ --glow:rgba(76,216,136,.5); }
+.p3d-card[data-step="5"] .p3d-card-inner{ --glow:rgba(23,168,85,.55); }
+.p3d-stage.is-in .p3d-card[data-step="2"]{ transition-delay:.06s; }
+.p3d-stage.is-in .p3d-card[data-step="3"]{ transition-delay:.12s; }
+.p3d-stage.is-in .p3d-card[data-step="4"]{ transition-delay:.18s; }
+.p3d-stage.is-in .p3d-card[data-step="5"]{ transition-delay:.24s; }
+.p3d-card[data-step="1"] .p3d-float{ animation-delay:0s; }
+.p3d-card[data-step="2"] .p3d-float{ animation-delay:-1.28s; }
+.p3d-card[data-step="3"] .p3d-float{ animation-delay:-2.56s; }
+.p3d-card[data-step="4"] .p3d-float{ animation-delay:-3.84s; }
+.p3d-card[data-step="5"] .p3d-float{ animation-delay:-5.12s; }
+
+@media (max-width:1180px) and (min-width:861px){
+  .p3d-stage--5{ grid-template-columns:repeat(3,1fr); }
+  .p3d-stage--5 .p3d-links{ display:none; }
+}
+@media (max-width:860px){
+  .p3d-stage--5{ grid-template-columns:1fr; }
 }
 
 /* -------------------- CTA banner -------------------- */
