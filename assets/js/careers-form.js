@@ -90,7 +90,7 @@
           form.querySelectorAll('.field.invalid').forEach(function (w) { w.classList.remove('invalid'); });
           form.querySelectorAll('.field-error').forEach(function (el) { el.textContent = ''; });
           status.style.color = 'var(--green-700)';
-          status.textContent = 'Thank you — your application has been sent. We will confirm receipt by email.';
+          status.textContent = 'Thank you — your details have been sent. We will confirm receipt by email and keep your CV on file.';
         } else {
           var msg = (r.data && r.data.errors && r.data.errors.length)
             ? r.data.errors.map(function (x) { return x.message; }).join(' ')

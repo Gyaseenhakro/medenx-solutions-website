@@ -35,7 +35,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Assign and review diagnostic and procedural codes for client practices, working to each client\'s defined workflows and documentation standards.',
     responsibilities: [
       'Review clinical documentation and assign accurate medical or dental codes.',
@@ -69,7 +69,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Work outstanding accounts receivable and drive denied claims to resolution, building the root-cause picture that prevents the same denials recurring.',
     responsibilities: [
       'Monitor outstanding balances and carry out structured AR follow-up.',
@@ -102,7 +102,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Own prior authorization requests end to end — submission, documentation, payer follow-up and turnaround visibility.',
     responsibilities: [
       'Prepare and submit prior authorization requests with complete supporting documentation.',
@@ -135,7 +135,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Support the scheduling, verification and communication workflows that shape a patient\'s first and ongoing experience with a practice.',
     responsibilities: [
       'Handle appointment scheduling, confirmation and rescheduling workflows.',
@@ -168,7 +168,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Manage provider credentialing and re-credentialing so clinicians can be enrolled and stay active with payers without avoidable delay.',
     responsibilities: [
       'Prepare and submit provider credentialing and enrolment applications.',
@@ -201,7 +201,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Provide real-time documentation support to clinicians so the clinical record is accurate and complete without adding to provider workload.',
     responsibilities: [
       'Document patient encounters accurately in the provider\'s EHR.',
@@ -234,7 +234,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Build and maintain the internal tooling and client-facing software that supports MeDenX operational workflows.',
     responsibilities: [
       'Develop and maintain custom healthcare software and internal tooling.',
@@ -267,7 +267,7 @@ window.MEDENX_JOBS = [
     experience: '',
     education: '',
     deadline: '',
-    status: 'Open',
+    status: 'Closed',
     overview: 'Keep infrastructure, networks and endpoints reliable and secure across MeDenX and the client environments we support.',
     responsibilities: [
       'Manage infrastructure, networks and systems availability.',

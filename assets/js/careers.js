@@ -93,9 +93,18 @@
       var openCount = visible.filter(function (j) {
         return !j.status || j.status.toLowerCase() !== 'closed';
       }).length;
-      countEl.textContent = openCount === 1
-        ? 'Showing 1 open position.'
-        : 'Showing ' + openCount + ' open positions.';
+
+      if (openCount === 0) {
+        /* Roles stay listed when closed so candidates can see the kind of work
+           we hire for — but the wording must not imply anything is hiring. */
+        countEl.textContent = visible.length
+          ? 'No positions are open for applications right now. The roles below show the kind of work we hire for — you can still send your details and we will keep them on file.'
+          : 'No positions are open in this area right now.';
+      } else {
+        countEl.textContent = openCount === 1
+          ? 'Showing 1 open position.'
+          : 'Showing ' + openCount + ' open positions.';
+      }
     }
 
     wireCards();
