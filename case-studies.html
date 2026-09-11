@@ -5,23 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Case Studies | MeDenX Solutions</title>
 <meta name="description" content="How MeDenX Solutions approaches real operational challenges across patient access, revenue cycle and healthcare technology.">
-<link rel="canonical" href="https://gyaseenhakro.github.io/medenx-solutions-website/case-studies.html">
+<link rel="canonical" href="https://medenxsolutions.com/case-studies.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Case Studies | MeDenX Solutions">
 <meta property="og:description" content="How MeDenX Solutions approaches real operational challenges across patient access, revenue cycle and healthcare technology.">
-<meta property="og:url" content="https://gyaseenhakro.github.io/medenx-solutions-website/case-studies.html">
-<meta property="og:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta property="og:url" content="https://medenxsolutions.com/case-studies.html">
+<meta property="og:image" content="https://medenxsolutions.com/assets/img/medenx-icon-lg.png">
 <meta property="og:site_name" content="MeDenX Solutions">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Case Studies | MeDenX Solutions">
 <meta name="twitter:description" content="How MeDenX Solutions approaches real operational challenges across patient access, revenue cycle and healthcare technology.">
-<meta name="twitter:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta name="twitter:image" content="https://medenxsolutions.com/assets/img/medenx-icon-lg.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <!-- BUILD:HEADER -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="index.html" class="brand">
@@ -31,7 +32,7 @@
         <span class="brand-sub">SOLUTIONS</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -40,11 +41,13 @@
     </nav>
     <div class="nav-actions">
       <a href="contact.html" class="btn btn-primary btn-sm">Request a Consultation</a>
-      <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
 <!-- /BUILD:HEADER -->
+
+<main id="main-content">
 
 <section class="page-hero">
   <div class="container">
@@ -59,7 +62,7 @@
   <div class="container" style="display:flex;flex-direction:column;gap:28px;">
 
     <div class="case-card">
-      <span class="case-tag">Revenue Cycle Management</span>
+      <span class="case-tag">Revenue Cycle Management</span><span class="case-illustrative">Illustrative example</span>
       <h3 style="font-size:24px;">Improving a Prior Authorization Workflow</h3>
       <p>A specialty practice was experiencing inconsistent turnaround on prior authorization requests, with no clear ownership of pending items.</p>
       <div class="case-steps">
@@ -71,7 +74,7 @@
     </div>
 
     <div class="case-card">
-      <span class="case-tag">Revenue Cycle Management</span>
+      <span class="case-tag">Revenue Cycle Management</span><span class="case-illustrative">Illustrative example</span>
       <h3 style="font-size:24px;">Reducing Claim Denial Workload</h3>
       <p>A multi-provider group needed a structured way to identify recurring, preventable denial patterns.</p>
       <div class="case-steps">
@@ -83,7 +86,7 @@
     </div>
 
     <div class="case-card">
-      <span class="case-tag">Patient Access &amp; Engagement</span>
+      <span class="case-tag">Patient Access &amp; Engagement</span><span class="case-illustrative">Illustrative example</span>
       <h3 style="font-size:24px;">Improving Patient Recall Processes</h3>
       <p>A primary care organization lacked a consistent recall process for overdue and preventive-care patients.</p>
       <div class="case-steps">
@@ -95,7 +98,7 @@
     </div>
 
     <div class="case-card">
-      <span class="case-tag">Healthcare Technology &amp; IT</span>
+      <span class="case-tag">Healthcare Technology &amp; IT</span><span class="case-illustrative">Illustrative example</span>
       <h3 style="font-size:24px;">Healthcare Data Migration Project</h3>
       <p>A growing practice needed to migrate legacy records to a new system without disrupting active clinical operations.</p>
       <div class="case-steps">
@@ -107,7 +110,7 @@
     </div>
 
     <div class="case-card">
-      <span class="case-tag">Healthcare Technology &amp; IT</span>
+      <span class="case-tag">Healthcare Technology &amp; IT</span><span class="case-illustrative">Illustrative example</span>
       <h3 style="font-size:24px;">IT Infrastructure Optimization</h3>
       <p>A multi-location practice needed a more reliable and secure technology infrastructure foundation.</p>
       <div class="case-steps">
@@ -134,6 +137,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- BUILD:FOOTER -->
 <footer class="site-footer">
@@ -170,10 +175,8 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="insights.html">Research</a></li>
-          <li><a href="insights.html">Blog</a></li>
+          <li><a href="insights.html">Research &amp; Insights</a></li>
           <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="insights.html">Healthcare Insights</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -186,7 +189,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 MeDenX Solutions. All rights reserved.</span>
+      <span>&copy; <span id="copyright-year">2026</span> MeDenX Solutions. All rights reserved.</span>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>

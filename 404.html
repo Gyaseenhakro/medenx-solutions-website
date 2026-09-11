@@ -12,6 +12,7 @@
 <body>
 
 <!-- BUILD:HEADER -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="index.html" class="brand">
@@ -21,7 +22,7 @@
         <span class="brand-sub">SOLUTIONS</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -30,11 +31,13 @@
     </nav>
     <div class="nav-actions">
       <a href="contact.html" class="btn btn-primary btn-sm">Request a Consultation</a>
-      <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
 <!-- /BUILD:HEADER -->
+
+<main id="main-content">
 
 <section class="page-hero" style="text-align:center;">
   <div class="container">
@@ -47,6 +50,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- BUILD:FOOTER -->
 <footer class="site-footer">
@@ -83,10 +88,8 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="insights.html">Research</a></li>
-          <li><a href="insights.html">Blog</a></li>
+          <li><a href="insights.html">Research &amp; Insights</a></li>
           <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="insights.html">Healthcare Insights</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -99,7 +102,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 MeDenX Solutions. All rights reserved.</span>
+      <span>&copy; <span id="copyright-year">2026</span> MeDenX Solutions. All rights reserved.</span>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>

@@ -5,23 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | MeDenX Solutions</title>
 <meta name="description" content="MeDenX Solutions privacy policy.">
-<link rel="canonical" href="https://gyaseenhakro.github.io/medenx-solutions-website/privacy.html">
+<link rel="canonical" href="https://medenxsolutions.com/privacy.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Privacy Policy | MeDenX Solutions">
 <meta property="og:description" content="MeDenX Solutions privacy policy.">
-<meta property="og:url" content="https://gyaseenhakro.github.io/medenx-solutions-website/privacy.html">
-<meta property="og:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta property="og:url" content="https://medenxsolutions.com/privacy.html">
+<meta property="og:image" content="https://medenxsolutions.com/assets/img/medenx-icon-lg.png">
 <meta property="og:site_name" content="MeDenX Solutions">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacy Policy | MeDenX Solutions">
 <meta name="twitter:description" content="MeDenX Solutions privacy policy.">
-<meta name="twitter:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta name="twitter:image" content="https://medenxsolutions.com/assets/img/medenx-icon-lg.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <!-- BUILD:HEADER -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="index.html" class="brand">
@@ -31,7 +32,7 @@
         <span class="brand-sub">SOLUTIONS</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -40,11 +41,13 @@
     </nav>
     <div class="nav-actions">
       <a href="contact.html" class="btn btn-primary btn-sm">Request a Consultation</a>
-      <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
 <!-- /BUILD:HEADER -->
+
+<main id="main-content">
 
 <section class="page-hero">
   <div class="container">
@@ -66,15 +69,23 @@
 
     <h2>Information We Collect</h2>
     <ul>
-      <li>Information you provide directly, such as through the Contact form (name, job title, organization, email, phone, and message).</li>
-      <li>Usage information collected automatically, such as browser type, pages visited and general analytics data.</li>
+      <li>Information you provide directly through the Contact form: name, job title, organization, business email, phone number, organization type, service of interest, estimated monthly volume and your message.</li>
+      <li>Standard technical information recorded when a page is requested, such as IP address, browser type and referring page.</li>
     </ul>
+    <p>This website does not use advertising cookies or third-party marketing trackers, and does not currently run an analytics product.</p>
 
     <h2>How We Use Information</h2>
     <ul>
       <li>To respond to consultation requests and inquiries.</li>
-      <li>To improve website content, performance and user experience.</li>
-      <li>To communicate updates relevant to services you have inquired about.</li>
+      <li>To communicate about the services you have inquired about.</li>
+    </ul>
+
+    <h2>Third-Party Services Used by This Website</h2>
+    <p>This website relies on the third parties below. Each receives limited information when you use the site and operates under its own privacy policy:</p>
+    <ul>
+      <li><strong>Formspree</strong> — processes and delivers Contact form submissions. Everything entered in the form is transmitted to and stored by Formspree in order to deliver it to us.</li>
+      <li><strong>GitHub Pages</strong> — hosts and serves this website, and receives the technical request information described above.</li>
+      <li><strong>Google Fonts</strong> — serves the typefaces used on this site. Your browser requests these files from Google, which receives your IP address as part of that request.</li>
     </ul>
 
     <h2>Protected Health Information</h2>
@@ -90,6 +101,8 @@
     <p>Questions about this Privacy Policy can be directed to info@medenxsolutions.com.</p>
   </div>
 </section>
+
+</main>
 
 <!-- BUILD:FOOTER -->
 <footer class="site-footer">
@@ -126,10 +139,8 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="insights.html">Research</a></li>
-          <li><a href="insights.html">Blog</a></li>
+          <li><a href="insights.html">Research &amp; Insights</a></li>
           <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="insights.html">Healthcare Insights</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -142,7 +153,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 MeDenX Solutions. All rights reserved.</span>
+      <span>&copy; <span id="copyright-year">2026</span> MeDenX Solutions. All rights reserved.</span>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>

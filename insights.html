@@ -5,23 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research &amp; Insights | MeDenX Solutions</title>
 <meta name="description" content="A healthcare research and knowledge center covering healthcare operations, revenue cycle, patient engagement, healthcare technology and clinical operations.">
-<link rel="canonical" href="https://gyaseenhakro.github.io/medenx-solutions-website/insights.html">
+<link rel="canonical" href="https://medenxsolutions.com/insights.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Research &amp; Insights | MeDenX Solutions">
 <meta property="og:description" content="A healthcare research and knowledge center covering healthcare operations, revenue cycle, patient engagement, healthcare technology and clinical operations.">
-<meta property="og:url" content="https://gyaseenhakro.github.io/medenx-solutions-website/insights.html">
-<meta property="og:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta property="og:url" content="https://medenxsolutions.com/insights.html">
+<meta property="og:image" content="https://medenxsolutions.com/assets/img/medenx-icon-lg.png">
 <meta property="og:site_name" content="MeDenX Solutions">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Research &amp; Insights | MeDenX Solutions">
 <meta name="twitter:description" content="A healthcare research and knowledge center covering healthcare operations, revenue cycle, patient engagement, healthcare technology and clinical operations.">
-<meta name="twitter:image" content="https://gyaseenhakro.github.io/medenx-solutions-website/assets/img/medenx-icon-lg.png">
+<meta name="twitter:image" content="https://medenxsolutions.com/assets/img/medenx-icon-lg.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <!-- BUILD:HEADER -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="index.html" class="brand">
@@ -31,7 +32,7 @@
         <span class="brand-sub">SOLUTIONS</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
@@ -40,11 +41,13 @@
     </nav>
     <div class="nav-actions">
       <a href="contact.html" class="btn btn-primary btn-sm">Request a Consultation</a>
-      <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
 <!-- /BUILD:HEADER -->
+
+<main id="main-content">
 
 <section class="page-hero">
   <div class="container">
@@ -57,17 +60,19 @@
 
 <section>
   <div class="container">
-    <div class="category-strip">
-      <span class="category-chip active">All</span>
-      <span class="category-chip">Healthcare Operations</span>
-      <span class="category-chip">Revenue Cycle</span>
-      <span class="category-chip">Patient Engagement</span>
-      <span class="category-chip">Healthcare Technology</span>
-      <span class="category-chip">Clinical Operations</span>
+    <div class="category-strip" role="group" aria-label="Filter articles by category">
+      <button type="button" class="category-chip active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="category-chip" data-filter="Healthcare Operations" aria-pressed="false">Healthcare Operations</button>
+      <button type="button" class="category-chip" data-filter="Revenue Cycle" aria-pressed="false">Revenue Cycle</button>
+      <button type="button" class="category-chip" data-filter="Patient Engagement" aria-pressed="false">Patient Engagement</button>
+      <button type="button" class="category-chip" data-filter="Healthcare Technology" aria-pressed="false">Healthcare Technology</button>
+      <button type="button" class="category-chip" data-filter="Clinical Operations" aria-pressed="false">Clinical Operations</button>
     </div>
 
-    <div class="grid-3">
-      <a href="insights/prior-authorization-bottlenecks.html" class="article-card">
+    <p id="filter-status" class="text-muted" style="font-size:14px;margin:0 0 20px;" aria-live="polite"></p>
+
+    <div class="grid-3" id="article-grid">
+      <a href="insights/prior-authorization-bottlenecks.html" class="article-card" data-category="Revenue Cycle">
         <div class="article-media"><span>Revenue Cycle</span></div>
         <div class="article-body">
           <div class="article-meta"><span>Research</span><span>8 min read</span></div>
@@ -79,65 +84,55 @@
         </div>
       </a>
 
-      <a href="#" class="article-card">
+      <div class="article-card is-pending" data-category="Patient Engagement">
         <div class="article-media"><span>Patient Engagement</span></div>
         <div class="article-body">
-          <div class="article-meta"><span>Research</span><span>6 min read</span></div>
+          <div class="article-meta"><span>Research</span><span>In preparation</span></div>
           <h3>Patient Recall Programs: What Consistency Actually Requires</h3>
           <p>Why recall and reminder workflows succeed or fail based on process discipline, not just messaging tools.</p>
-          <span class="card-link">Read Article
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </span>
+          <span class="card-status">Publishing soon</span>
         </div>
-      </a>
+      </div>
 
-      <a href="#" class="article-card">
+      <div class="article-card is-pending" data-category="Healthcare Technology">
         <div class="article-media"><span>Healthcare Technology</span></div>
         <div class="article-body">
-          <div class="article-meta"><span>Research</span><span>7 min read</span></div>
+          <div class="article-meta"><span>Research</span><span>In preparation</span></div>
           <h3>Planning a Healthcare Data Migration Without Disrupting Operations</h3>
           <p>A framework for sequencing data migration projects around active clinical and billing workflows.</p>
-          <span class="card-link">Read Article
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </span>
+          <span class="card-status">Publishing soon</span>
         </div>
-      </a>
+      </div>
 
-      <a href="#" class="article-card">
+      <div class="article-card is-pending" data-category="Clinical Operations">
         <div class="article-media"><span>Clinical Operations</span></div>
         <div class="article-body">
-          <div class="article-meta"><span>Research</span><span>5 min read</span></div>
+          <div class="article-meta"><span>Research</span><span>In preparation</span></div>
           <h3>Credentialing Delays: A Root-Cause View</h3>
           <p>Common documentation gaps and payer-side delays that extend provider credentialing timelines.</p>
-          <span class="card-link">Read Article
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </span>
+          <span class="card-status">Publishing soon</span>
         </div>
-      </a>
+      </div>
 
-      <a href="#" class="article-card">
+      <div class="article-card is-pending" data-category="Revenue Cycle">
         <div class="article-media"><span>Revenue Cycle</span></div>
         <div class="article-body">
-          <div class="article-meta"><span>Research</span><span>9 min read</span></div>
+          <div class="article-meta"><span>Research</span><span>In preparation</span></div>
           <h3>Denial Management: Building a Root-Cause Tracking Process</h3>
           <p>How structured denial tracking helps practices identify recurring, preventable claim issues.</p>
-          <span class="card-link">Read Article
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </span>
+          <span class="card-status">Publishing soon</span>
         </div>
-      </a>
+      </div>
 
-      <a href="#" class="article-card">
+      <div class="article-card is-pending" data-category="Healthcare Operations">
         <div class="article-media"><span>Healthcare Operations</span></div>
         <div class="article-body">
-          <div class="article-meta"><span>Research</span><span>6 min read</span></div>
+          <div class="article-meta"><span>Research</span><span>In preparation</span></div>
           <h3>Referral Coordination as an Operational, Not Just Clinical, Workflow</h3>
           <p>Why referral leakage is often an administrative coordination problem more than a clinical one.</p>
-          <span class="card-link">Read Article
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </span>
+          <span class="card-status">Publishing soon</span>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -183,6 +178,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- BUILD:FOOTER -->
 <footer class="site-footer">
   <div class="container">
@@ -218,10 +215,8 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul>
-          <li><a href="insights.html">Research</a></li>
-          <li><a href="insights.html">Blog</a></li>
+          <li><a href="insights.html">Research &amp; Insights</a></li>
           <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="insights.html">Healthcare Insights</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -234,7 +229,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 MeDenX Solutions. All rights reserved.</span>
+      <span>&copy; <span id="copyright-year">2026</span> MeDenX Solutions. All rights reserved.</span>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
@@ -247,5 +242,6 @@
 <!-- /BUILD:FOOTER -->
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/insights-filter.js"></script>
 </body>
 </html>

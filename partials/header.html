@@ -1,3 +1,4 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="site-header">
   <div class="container nav-wrap">
     <a href="{{PREFIX}}index.html" class="brand">
@@ -7,7 +8,7 @@
         <span class="brand-sub">SOLUTIONS</span>
       </span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
       <a href="{{PREFIX}}index.html"{{ACTIVE_HOME}}>Home</a>
       <a href="{{PREFIX}}about.html"{{ACTIVE_ABOUT}}>About</a>
       <a href="{{PREFIX}}services.html"{{ACTIVE_SERVICES}}>Services</a>
@@ -16,7 +17,7 @@
     </nav>
     <div class="nav-actions">
       <a href="{{PREFIX}}contact.html" class="btn btn-primary btn-sm">Request a Consultation</a>
-      <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false"><span></span></button>
     </div>
   </div>
 </header>
